@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Converter - Liters, Gallons, ml, cups, fl oz | ConvertAll</title>
+  <meta name="description" content="Free online volume converter. Convert between liters, gallons, milliliters, cups, and fluid ounces instantly.">
+  <meta name="keywords" content="volume converter, liters to gallons, ml to cups, fluid ounces converter, liquid converter">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/volume.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="volume">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Volume Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>🧪 Volume Converter</h1>
+        <p>Convert between liters, gallons, milliliters, cups, and fluid ounces</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="1" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="liters" selected>Liters (L)</option>
+              <option value="gallons">Gallons (gal)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cups">Cups</option>
+              <option value="fl oz">Fluid Ounces (fl oz)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="liters">Liters (L)</option>
+              <option value="gallons" selected>Gallons (gal)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cups">Cups</option>
+              <option value="fl oz">Fluid Ounces (fl oz)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Volume Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 liter</td><td>gallons</td><td>0.264172 gal</td></tr>
+            <tr><td>1 gallon</td><td>liters</td><td>3.78541 L</td></tr>
+            <tr><td>1 cup</td><td>ml</td><td>236.588 ml</td></tr>
+            <tr><td>1 liter</td><td>cups</td><td>4.22675 cups</td></tr>
+            <tr><td>1 fl oz</td><td>ml</td><td>29.5735 ml</td></tr>
+            <tr><td>1 gallon</td><td>cups</td><td>16 cups</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Volume Conversion</h2>
+        <p>Volume conversion is needed in cooking, chemistry, and everyday life. The metric system uses liters and milliliters, while the US customary system uses gallons, cups, and fluid ounces.</p>
+
+        <h3>Volume Units</h3>
+        <ul>
+          <li><strong>Liters (L):</strong> The SI unit of volume. Used worldwide.</li>
+          <li><strong>Gallons (gal):</strong> Used in the US (US gallon = 3.785 L) and UK (imperial gallon = 4.546 L).</li>
+          <li><strong>Milliliters (ml):</strong> 1/1000 of a liter. Used for small quantities.</li>
+          <li><strong>Cups:</strong> Common in cooking. 1 US cup = 236.588 ml.</li>
+          <li><strong>Fluid Ounces (fl oz):</strong> 1 US fl oz = 29.5735 ml.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div><h4>Converters</h4><ul class="footer-links"><li><a href="currency.html">Currency</a></li><li><a href="length.html">Length</a></li><li><a href="weight.html">Weight</a></li><li><a href="temperature.html">Temperature</a></li></ul></div>
+      <div><h4>More Tools</h4><ul class="footer-links"><li><a href="speed.html">Speed</a></li><li><a href="area.html">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="data.html">Data</a></li><li><a href="time.html">Time</a></li></ul></div>
+      <div><h4>Popular</h4><ul class="footer-links"><li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li><li><a href="temperature.html?from=C&to=F">°C to °F</a></li><li><a href="length.html?from=cm&to=in">cm to inches</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

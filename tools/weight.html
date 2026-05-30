@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converter - kg, lbs, oz, grams | ConvertAll</title>
+  <meta name="description" content="Free online weight converter. Convert between kilograms, pounds, ounces, grams, metric tons, and stones instantly. Accurate weight conversion calculator.">
+  <meta name="keywords" content="weight converter, kg to lbs, pounds to kg, ounces to grams, mass converter, kilogram to pound">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/weight.html">
+
+  <meta property="og:title" content="Weight Converter - kg, lbs, oz, grams">
+  <meta property="og:description" content="Convert between kg, lbs, oz, grams, tons, and stones instantly.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Weight Converter",
+    "description": "Convert between kilograms, pounds, ounces, grams, and more.",
+    "applicationCategory": "UtilityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body data-page="weight">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link active">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Weight Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>⚖️ Weight Converter</h1>
+        <p>Convert between kilograms, pounds, ounces, grams, metric tons, and stones</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="1" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="kg" selected>Kilograms (kg)</option>
+              <option value="g">Grams (g)</option>
+              <option value="lb">Pounds (lb)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="ton">Metric Tons (t)</option>
+              <option value="st">Stones (st)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="kg">Kilograms (kg)</option>
+              <option value="g">Grams (g)</option>
+              <option value="lb" selected>Pounds (lb)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="ton">Metric Tons (t)</option>
+              <option value="st">Stones (st)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Weight Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 kilogram</td><td>pounds</td><td>2.20462 lb</td></tr>
+            <tr><td>1 pound</td><td>kilograms</td><td>0.453592 kg</td></tr>
+            <tr><td>1 ounce</td><td>grams</td><td>28.3495 g</td></tr>
+            <tr><td>1 gram</td><td>ounces</td><td>0.035274 oz</td></tr>
+            <tr><td>1 metric ton</td><td>pounds</td><td>2204.62 lb</td></tr>
+            <tr><td>1 stone</td><td>kilograms</td><td>6.35029 kg</td></tr>
+            <tr><td>1 kilogram</td><td>grams</td><td>1000 g</td></tr>
+            <tr><td>1 pound</td><td>ounces</td><td>16 oz</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Weight Conversion</h2>
+        <p>Our weight converter supports both metric and imperial units of mass. The kilogram (kg) is the base unit of mass in the International System of Units (SI), while the pound (lb) is commonly used in the United States and United Kingdom.</p>
+
+        <h3>Metric Units</h3>
+        <p>The metric system uses the kilogram as the base unit. Grams (g) are used for lighter objects, while metric tons (t) are used for very heavy loads. 1 kilogram = 1000 grams = 0.001 metric tons.</p>
+
+        <h3>Imperial Units</h3>
+        <p>The imperial system uses pounds and ounces. 1 pound = 16 ounces. The stone (st) is used in the UK and Ireland for body weight: 1 stone = 14 pounds = 6.35 kg.</p>
+
+        <h3>Most Searched Conversions</h3>
+        <ul>
+          <li><strong>kg to lbs:</strong> 1 kg = 2.20462 lbs</li>
+          <li><strong>lbs to kg:</strong> 1 lb = 0.453592 kg</li>
+          <li><strong>oz to grams:</strong> 1 oz = 28.3495 g</li>
+          <li><strong>grams to oz:</strong> 1 g = 0.035274 oz</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="currency.html">Currency</a></li>
+          <li><a href="length.html">Length</a></li>
+          <li><a href="weight.html">Weight</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="speed.html">Speed</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="volume.html">Volume</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li>
+          <li><a href="temperature.html?from=C&to=F">°C to °F</a></li>
+          <li><a href="length.html?from=cm&to=in">cm to inches</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      if (params.get('value')) document.getElementById('input-value').value = params.get('value');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

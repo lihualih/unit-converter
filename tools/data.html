@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Storage Converter - Bytes, KB, MB, GB, TB | ConvertAll</title>
+  <meta name="description" content="Free online data storage converter. Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes instantly.">
+  <meta name="keywords" content="data converter, bytes to KB, MB to GB, GB to TB, storage converter, file size converter">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/data.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="data">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Data Storage Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>💾 Data Storage Converter</h1>
+        <p>Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="1" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="bytes">Bytes (B)</option>
+              <option value="KB">Kilobytes (KB)</option>
+              <option value="MB" selected>Megabytes (MB)</option>
+              <option value="GB">Gigabytes (GB)</option>
+              <option value="TB">Terabytes (TB)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="bytes">Bytes (B)</option>
+              <option value="KB" selected>Kilobytes (KB)</option>
+              <option value="MB">Megabytes (MB)</option>
+              <option value="GB">Gigabytes (GB)</option>
+              <option value="TB">Terabytes (TB)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Data Storage Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 KB</td><td>Bytes</td><td>1,024 B</td></tr>
+            <tr><td>1 MB</td><td>KB</td><td>1,024 KB</td></tr>
+            <tr><td>1 GB</td><td>MB</td><td>1,024 MB</td></tr>
+            <tr><td>1 TB</td><td>GB</td><td>1,024 GB</td></tr>
+            <tr><td>1 GB</td><td>Bytes</td><td>1,073,741,824 B</td></tr>
+            <tr><td>1 TB</td><td>MB</td><td>1,048,576 MB</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Data Storage Conversion</h2>
+        <p>Data storage units follow the binary system where each unit is 1024 times the previous one (2^10). This is different from the metric system where each unit is 1000 times the previous.</p>
+
+        <h3>Data Units</h3>
+        <ul>
+          <li><strong>Byte (B):</strong> The basic unit. One byte stores one character.</li>
+          <li><strong>Kilobyte (KB):</strong> 1 KB = 1,024 bytes. A short text document.</li>
+          <li><strong>Megabyte (MB):</strong> 1 MB = 1,024 KB = 1,048,576 bytes. A photo or short song.</li>
+          <li><strong>Gigabyte (GB):</strong> 1 GB = 1,024 MB. A movie or several hundred photos.</li>
+          <li><strong>Terabyte (TB):</strong> 1 TB = 1,024 GB. A large hard drive capacity.</li>
+        </ul>
+
+        <h3>Note on Binary vs Decimal</h3>
+        <p>Storage manufacturers often use decimal (1 KB = 1000 bytes) while operating systems use binary (1 KB = 1024 bytes). This converter uses the binary (IEC) standard. The IEC also defines KiB, MiB, GiB, TiB for binary units.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div><h4>Converters</h4><ul class="footer-links"><li><a href="currency.html">Currency</a></li><li><a href="length.html">Length</a></li><li><a href="weight.html">Weight</a></li><li><a href="temperature.html">Temperature</a></li></ul></div>
+      <div><h4>More Tools</h4><ul class="footer-links"><li><a href="speed.html">Speed</a></li><li><a href="area.html">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="data.html">Data</a></li><li><a href="time.html">Time</a></li></ul></div>
+      <div><h4>Popular</h4><ul class="footer-links"><li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li><li><a href="temperature.html?from=C&to=F">°C to °F</a></li><li><a href="length.html?from=cm&to=in">cm to inches</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

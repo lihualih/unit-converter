@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Converter - sq m, sq ft, acres, hectares | ConvertAll</title>
+  <meta name="description" content="Free online area converter. Convert between square meters, square feet, square kilometers, acres, and hectares instantly.">
+  <meta name="keywords" content="area converter, square meters to square feet, acres to hectares, sq ft to sq m, land area converter">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/area.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="area">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Area Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>📐 Area Converter</h1>
+        <p>Convert between square meters, square feet, square kilometers, acres, and hectares</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="1" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="sq m" selected>Square Meters (m²)</option>
+              <option value="sq ft">Square Feet (ft²)</option>
+              <option value="sq km">Square Kilometers (km²)</option>
+              <option value="acres">Acres</option>
+              <option value="hectares">Hectares</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="sq m">Square Meters (m²)</option>
+              <option value="sq ft" selected>Square Feet (ft²)</option>
+              <option value="sq km">Square Kilometers (km²)</option>
+              <option value="acres">Acres</option>
+              <option value="hectares">Hectares</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Area Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 sq meter</td><td>sq feet</td><td>10.7639 ft²</td></tr>
+            <tr><td>1 acre</td><td>sq meters</td><td>4046.86 m²</td></tr>
+            <tr><td>1 hectare</td><td>acres</td><td>2.47105 acres</td></tr>
+            <tr><td>1 sq kilometer</td><td>sq miles</td><td>0.386102 mi²</td></tr>
+            <tr><td>1 hectare</td><td>sq meters</td><td>10000 m²</td></tr>
+            <tr><td>1 acre</td><td>sq feet</td><td>43560 ft²</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Area Conversion</h2>
+        <p>Area conversion is essential for real estate, agriculture, construction, and land measurement. Different countries use different units, making conversion tools invaluable.</p>
+
+        <h3>Area Units</h3>
+        <ul>
+          <li><strong>Square Meters (m²):</strong> The SI unit of area, used worldwide.</li>
+          <li><strong>Square Feet (ft²):</strong> Commonly used in the US and UK for real estate.</li>
+          <li><strong>Acres:</strong> Used in the US and UK for land measurement. 1 acre = 43,560 ft².</li>
+          <li><strong>Hectares:</strong> Used internationally for large land areas. 1 hectare = 10,000 m².</li>
+          <li><strong>Square Kilometers:</strong> Used for very large areas like cities and countries.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div><h4>Converters</h4><ul class="footer-links"><li><a href="currency.html">Currency</a></li><li><a href="length.html">Length</a></li><li><a href="weight.html">Weight</a></li><li><a href="temperature.html">Temperature</a></li></ul></div>
+      <div><h4>More Tools</h4><ul class="footer-links"><li><a href="speed.html">Speed</a></li><li><a href="area.html">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="data.html">Data</a></li><li><a href="time.html">Time</a></li></ul></div>
+      <div><h4>Popular</h4><ul class="footer-links"><li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li><li><a href="temperature.html?from=C&to=F">°C to °F</a></li><li><a href="length.html?from=cm&to=in">cm to inches</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

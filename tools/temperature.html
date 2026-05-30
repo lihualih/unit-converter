@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter - Celsius, Fahrenheit, Kelvin | ConvertAll</title>
+  <meta name="description" content="Free online temperature converter. Convert between Celsius, Fahrenheit, and Kelvin instantly. Accurate temperature conversion calculator.">
+  <meta name="keywords" content="temperature converter, celsius to fahrenheit, fahrenheit to celsius, kelvin converter, °C to °F, °F to °C">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/temperature.html">
+
+  <meta property="og:title" content="Temperature Converter - Celsius, Fahrenheit, Kelvin">
+  <meta property="og:description" content="Convert between Celsius, Fahrenheit, and Kelvin instantly.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Temperature Converter",
+    "description": "Convert between Celsius, Fahrenheit, and Kelvin.",
+    "applicationCategory": "UtilityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body data-page="temperature">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link active">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Temperature Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>🌡️ Temperature Converter</h1>
+        <p>Convert between Celsius, Fahrenheit, and Kelvin</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter temperature" value="100" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="C" selected>Celsius (°C)</option>
+              <option value="F">Fahrenheit (°F)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="C">Celsius (°C)</option>
+              <option value="F" selected>Fahrenheit (°F)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Temperature Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>Celsius</th><th>Fahrenheit</th><th>Kelvin</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0 °C</td><td>32 °F</td><td>273.15 K</td></tr>
+            <tr><td>10 °C</td><td>50 °F</td><td>283.15 K</td></tr>
+            <tr><td>20 °C</td><td>68 °F</td><td>293.15 K</td></tr>
+            <tr><td>37 °C</td><td>98.6 °F</td><td>310.15 K</td></tr>
+            <tr><td>100 °C</td><td>212 °F</td><td>373.15 K</td></tr>
+            <tr><td>-40 °C</td><td>-40 °F</td><td>233.15 K</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Temperature Conversion</h2>
+        <p>Temperature conversion is one of the most commonly needed calculations. Unlike other unit conversions, temperature scales don't simply multiply by a factor — they use formulas with offsets.</p>
+
+        <h3>Conversion Formulas</h3>
+        <ul>
+          <li><strong>Celsius to Fahrenheit:</strong> °F = °C × 9/5 + 32</li>
+          <li><strong>Fahrenheit to Celsius:</strong> °C = (°F − 32) × 5/9</li>
+          <li><strong>Celsius to Kelvin:</strong> K = °C + 273.15</li>
+          <li><strong>Kelvin to Celsius:</strong> °C = K − 273.15</li>
+        </ul>
+
+        <h3>Temperature Scales</h3>
+        <p><strong>Celsius (°C)</strong> is used in most countries worldwide. Water freezes at 0°C and boils at 100°C at standard atmospheric pressure.</p>
+        <p><strong>Fahrenheit (°F)</strong> is primarily used in the United States. Water freezes at 32°F and boils at 212°F.</p>
+        <p><strong>Kelvin (K)</strong> is the SI unit of temperature used in science. 0 K is absolute zero, the theoretical lowest possible temperature.</p>
+
+        <h3>Key Reference Points</h3>
+        <ul>
+          <li>Absolute zero: -273.15 °C = -459.67 °F = 0 K</li>
+          <li>Water freezes: 0 °C = 32 °F = 273.15 K</li>
+          <li>Body temperature: 37 °C = 98.6 °F = 310.15 K</li>
+          <li>Water boils: 100 °C = 212 °F = 373.15 K</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="currency.html">Currency</a></li>
+          <li><a href="length.html">Length</a></li>
+          <li><a href="weight.html">Weight</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="speed.html">Speed</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="volume.html">Volume</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li>
+          <li><a href="temperature.html?from=C&to=F">°C to °F</a></li>
+          <li><a href="length.html?from=cm&to=in">cm to inches</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      if (params.get('value')) document.getElementById('input-value').value = params.get('value');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter - Real-Time Exchange Rates | ConvertAll</title>
+  <meta name="description" content="Free online currency converter with real-time exchange rates. Convert USD, EUR, GBP, JPY, and 30+ world currencies instantly. Live rates updated every 30 minutes.">
+  <meta name="keywords" content="currency converter, exchange rate, USD to EUR, dollar to euro, money converter, forex converter, currency exchange">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/currency.html">
+
+  <meta property="og:title" content="Currency Converter - Real-Time Exchange Rates">
+  <meta property="og:description" content="Convert between 30+ world currencies with live exchange rates. Free, fast, and accurate.">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Currency Converter - Live Rates">
+  <meta name="twitter:description" content="Convert 30+ currencies with real-time exchange rates.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Currency Converter",
+    "url": "https://example.com/tools/currency.html",
+    "description": "Convert between 30+ world currencies with real-time exchange rates.",
+    "applicationCategory": "UtilityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body data-page="currency">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span>ConvertAll</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link active">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Currency Converter</span>
+      </nav>
+
+      <!-- Header -->
+      <div class="converter-header">
+        <h1>💱 Currency Converter</h1>
+        <p>Convert between 30+ world currencies with real-time exchange rates</p>
+      </div>
+
+      <!-- Ad Placeholder -->
+      <div class="ad-placeholder ad-placeholder-top">
+        <span>Advertisement</span>
+      </div>
+
+      <!-- Converter Box -->
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Amount</label>
+            <input type="number" id="input-value" placeholder="Enter amount" value="1" min="0" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="USD" selected>🇺🇸 USD - US Dollar</option>
+              <option value="EUR">🇪🇺 EUR - Euro</option>
+              <option value="GBP">🇬🇧 GBP - British Pound</option>
+              <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+              <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+              <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+              <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+              <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+              <option value="INR">🇮🇳 INR - Indian Rupee</option>
+              <option value="MXN">🇲🇽 MXN - Mexican Peso</option>
+              <option value="BRL">🇧🇷 BRL - Brazilian Real</option>
+              <option value="KRW">🇰🇷 KRW - South Korean Won</option>
+              <option value="SEK">🇸🇪 SEK - Swedish Krona</option>
+              <option value="NOK">🇳🇴 NOK - Norwegian Krone</option>
+              <option value="DKK">🇩🇰 DKK - Danish Krone</option>
+              <option value="NZD">🇳🇿 NZD - New Zealand Dollar</option>
+              <option value="SGD">🇸🇬 SGD - Singapore Dollar</option>
+              <option value="HKD">🇭🇰 HKD - Hong Kong Dollar</option>
+              <option value="TRY">🇹🇷 TRY - Turkish Lira</option>
+              <option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+              <option value="RUB">🇷🇺 RUB - Russian Ruble</option>
+              <option value="PLN">🇵🇱 PLN - Polish Zloty</option>
+              <option value="THB">🇹🇭 THB - Thai Baht</option>
+              <option value="IDR">🇮🇩 IDR - Indonesian Rupiah</option>
+              <option value="MYR">🇲🇾 MYR - Malaysian Ringgit</option>
+              <option value="PHP">🇵🇭 PHP - Philippine Peso</option>
+              <option value="TWD">🇹🇼 TWD - Taiwan Dollar</option>
+              <option value="ARS">🇦🇷 ARS - Argentine Peso</option>
+              <option value="CLP">🇨🇱 CLP - Chilean Peso</option>
+              <option value="COP">🇨🇴 COP - Colombian Peso</option>
+              <option value="EGP">🇪🇬 EGP - Egyptian Pound</option>
+              <option value="NGN">🇳🇬 NGN - Nigerian Naira</option>
+              <option value="PKR">🇵🇰 PKR - Pakistani Rupee</option>
+              <option value="BDT">🇧🇩 BDT - Bangladeshi Taka</option>
+              <option value="VND">🇻🇳 VND - Vietnamese Dong</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap currencies">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Converted Amount</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="USD">🇺🇸 USD - US Dollar</option>
+              <option value="EUR" selected>🇪🇺 EUR - Euro</option>
+              <option value="GBP">🇬🇧 GBP - British Pound</option>
+              <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+              <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+              <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+              <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+              <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+              <option value="INR">🇮🇳 INR - Indian Rupee</option>
+              <option value="MXN">🇲🇽 MXN - Mexican Peso</option>
+              <option value="BRL">🇧🇷 BRL - Brazilian Real</option>
+              <option value="KRW">🇰🇷 KRW - South Korean Won</option>
+              <option value="SEK">🇸🇪 SEK - Swedish Krona</option>
+              <option value="NOK">🇳🇴 NOK - Norwegian Krone</option>
+              <option value="DKK">🇩🇰 DKK - Danish Krone</option>
+              <option value="NZD">🇳🇿 NZD - New Zealand Dollar</option>
+              <option value="SGD">🇸🇬 SGD - Singapore Dollar</option>
+              <option value="HKD">🇭🇰 HKD - Hong Kong Dollar</option>
+              <option value="TRY">🇹🇷 TRY - Turkish Lira</option>
+              <option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+              <option value="RUB">🇷🇺 RUB - Russian Ruble</option>
+              <option value="PLN">🇵🇱 PLN - Polish Zloty</option>
+              <option value="THB">🇹🇭 THB - Thai Baht</option>
+              <option value="IDR">🇮🇩 IDR - Indonesian Rupiah</option>
+              <option value="MYR">🇲🇾 MYR - Malaysian Ringgit</option>
+              <option value="PHP">🇵🇭 PHP - Philippine Peso</option>
+              <option value="TWD">🇹🇼 TWD - Taiwan Dollar</option>
+              <option value="ARS">🇦🇷 ARS - Argentine Peso</option>
+              <option value="CLP">🇨🇱 CLP - Chilean Peso</option>
+              <option value="COP">🇨🇴 COP - Colombian Peso</option>
+              <option value="EGP">🇪🇬 EGP - Egyptian Pound</option>
+              <option value="NGN">🇳🇬 NGN - Nigerian Naira</option>
+              <option value="PKR">🇵🇰 PKR - Pakistani Rupee</option>
+              <option value="BDT">🇧🇩 BDT - Bangladeshi Taka</option>
+              <option value="VND">🇻🇳 VND - Vietnamese Dong</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Result Display -->
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+          <div class="result-formula">Fetching exchange rates...</div>
+        </div>
+
+        <!-- Rate Status -->
+        <div id="rate-status" class="mt-2 text-center" style="font-size:0.85rem; color: var(--text-muted);">
+          <span class="status-dot"></span> Loading exchange rates...
+        </div>
+      </div>
+
+      <!-- Ad Placeholder -->
+      <div class="ad-placeholder ad-placeholder-bottom">
+        <span>Advertisement</span>
+      </div>
+
+      <!-- Common Conversions Table -->
+      <section class="conversion-table-section">
+        <h2>Popular Currency Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr>
+              <th>From</th>
+              <th>To</th>
+              <th>Rate (approximate)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1 USD</td><td>EUR</td><td>0.92</td></tr>
+            <tr><td>1 USD</td><td>GBP</td><td>0.79</td></tr>
+            <tr><td>1 USD</td><td>JPY</td><td>149.50</td></tr>
+            <tr><td>1 USD</td><td>CAD</td><td>1.36</td></tr>
+            <tr><td>1 USD</td><td>AUD</td><td>1.53</td></tr>
+            <tr><td>1 USD</td><td>CHF</td><td>0.88</td></tr>
+            <tr><td>1 USD</td><td>CNY</td><td>7.24</td></tr>
+            <tr><td>1 USD</td><td>INR</td><td>83.12</td></tr>
+            <tr><td>1 EUR</td><td>USD</td><td>1.09</td></tr>
+            <tr><td>1 GBP</td><td>USD</td><td>1.27</td></tr>
+          </tbody>
+        </table>
+        <p class="mt-2" style="font-size:0.8rem; color: var(--text-muted);">Rates shown are approximate. Live rates are fetched from the Open Exchange Rates API.</p>
+      </section>
+
+      <!-- SEO Content -->
+      <section class="info-section">
+        <h2>About Currency Conversion</h2>
+        <p>Our currency converter provides real-time exchange rates for over 30 world currencies. Rates are fetched from the Open Exchange Rates API and updated every 30 minutes to ensure accuracy.</p>
+
+        <h3>How to Use the Currency Converter</h3>
+        <ol>
+          <li>Enter the amount you want to convert in the "Amount" field</li>
+          <li>Select the source currency from the "From" dropdown</li>
+          <li>Select the target currency from the "To" dropdown</li>
+          <li>The converted amount appears instantly</li>
+          <li>Use the swap button (⇄) to quickly reverse the conversion</li>
+        </ol>
+
+        <h3>Supported Currencies</h3>
+        <p>We support major world currencies including USD (US Dollar), EUR (Euro), GBP (British Pound), JPY (Japanese Yen), CAD (Canadian Dollar), AUD (Australian Dollar), CHF (Swiss Franc), CNY (Chinese Yuan), INR (Indian Rupee), MXN (Mexican Peso), BRL (Brazilian Real), KRW (South Korean Won), and many more.</p>
+
+        <h3>Exchange Rate Accuracy</h3>
+        <p>Exchange rates are sourced from the Open Exchange Rates API (open.er-api.com), which aggregates data from multiple financial institutions. While our rates are highly accurate for informational purposes, they may differ slightly from rates offered by banks and currency exchange services, which typically include a markup.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          <span>ConvertAll</span>
+        </a>
+        <p>Free online unit and currency converter. Fast, accurate, and easy to use.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="currency.html">Currency</a></li>
+          <li><a href="length.html">Length</a></li>
+          <li><a href="weight.html">Weight</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="speed.html">Speed</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="volume.html">Volume</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li>
+          <li><a href="temperature.html?from=C&to=F">°C to °F</a></li>
+          <li><a href="length.html?from=cm&to=in">cm to inches</a></li>
+          <li><a href="currency.html">USD to EUR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 ConvertAll. Free online unit and currency converter tools.</p>
+    </div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+
+  <!-- Handle URL parameters for deep linking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      const from = params.get('from');
+      const to = params.get('to');
+      const amount = params.get('amount');
+      if (from) document.getElementById('from-unit').value = from;
+      if (to) document.getElementById('to-unit').value = to;
+      if (amount) document.getElementById('input-value').value = amount;
+    });
+  </script>
+</body>
+</html>

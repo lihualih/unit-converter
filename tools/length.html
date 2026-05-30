@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Converter - Meters, Feet, Inches, km, Miles | ConvertAll</title>
+  <meta name="description" content="Free online length converter. Convert between meters, kilometers, miles, feet, inches, centimeters, millimeters, and yards instantly. Accurate and fast.">
+  <meta name="keywords" content="length converter, meter to feet, km to miles, cm to inches, distance converter, unit converter, metric to imperial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/length.html">
+
+  <meta property="og:title" content="Length Converter - Meters, Feet, Inches, km, Miles">
+  <meta property="og:description" content="Convert between meters, km, miles, feet, inches, cm, mm, and yards instantly.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Length Converter",
+    "description": "Convert between meters, kilometers, miles, feet, inches, and more.",
+    "applicationCategory": "UtilityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body data-page="length">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span>ConvertAll</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link active">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Length Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>📏 Length Converter</h1>
+        <p>Convert between meters, kilometers, miles, feet, inches, and more</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="1" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="m" selected>Meters (m)</option>
+              <option value="km">Kilometers (km)</option>
+              <option value="mi">Miles (mi)</option>
+              <option value="ft">Feet (ft)</option>
+              <option value="in">Inches (in)</option>
+              <option value="cm">Centimeters (cm)</option>
+              <option value="mm">Millimeters (mm)</option>
+              <option value="yd">Yards (yd)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="m">Meters (m)</option>
+              <option value="km">Kilometers (km)</option>
+              <option value="mi">Miles (mi)</option>
+              <option value="ft" selected>Feet (ft)</option>
+              <option value="in">Inches (in)</option>
+              <option value="cm">Centimeters (cm)</option>
+              <option value="mm">Millimeters (mm)</option>
+              <option value="yd">Yards (yd)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Length Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 meter</td><td>feet</td><td>3.28084 ft</td></tr>
+            <tr><td>1 kilometer</td><td>miles</td><td>0.621371 mi</td></tr>
+            <tr><td>1 inch</td><td>centimeters</td><td>2.54 cm</td></tr>
+            <tr><td>1 foot</td><td>meters</td><td>0.3048 m</td></tr>
+            <tr><td>1 mile</td><td>kilometers</td><td>1.60934 km</td></tr>
+            <tr><td>1 yard</td><td>meters</td><td>0.9144 m</td></tr>
+            <tr><td>1 centimeter</td><td>inches</td><td>0.393701 in</td></tr>
+            <tr><td>1 meter</td><td>centimeters</td><td>100 cm</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Length Conversion</h2>
+        <p>Our length converter supports both metric and imperial units, making it easy to convert between measurement systems used around the world.</p>
+
+        <h3>Metric Units</h3>
+        <p>The metric system uses meters as the base unit of length. Kilometers (km) are used for long distances, centimeters (cm) and millimeters (mm) for small measurements.</p>
+
+        <h3>Imperial Units</h3>
+        <p>The imperial system uses feet and inches in the United States and a few other countries. Miles are used for long distances, and yards are commonly used in sports and construction.</p>
+
+        <h3>Common Conversions</h3>
+        <ul>
+          <li><strong>Meters to Feet:</strong> 1 m = 3.28084 ft</li>
+          <li><strong>Kilometers to Miles:</strong> 1 km = 0.621371 mi</li>
+          <li><strong>Centimeters to Inches:</strong> 1 cm = 0.393701 in</li>
+          <li><strong>Meters to Yards:</strong> 1 m = 1.09361 yd</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="currency.html">Currency</a></li>
+          <li><a href="length.html">Length</a></li>
+          <li><a href="weight.html">Weight</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="speed.html">Speed</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="volume.html">Volume</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li>
+          <li><a href="temperature.html?from=C&to=F">°C to °F</a></li>
+          <li><a href="length.html?from=cm&to=in">cm to inches</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      if (params.get('value')) document.getElementById('input-value').value = params.get('value');
+      // Trigger conversion after setting params
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit & Currency Converter - Free Online Conversion Tools</title>
+  <meta name="description" content="Free online unit and currency converter. Convert currencies, length, weight, temperature, speed, area, volume, data storage, and time instantly. Real-time exchange rates.">
+  <meta name="keywords" content="unit converter, currency converter, kg to lbs, celsius to fahrenheit, online converter, free converter, measurement converter">
+  <meta name="author" content="Unit Converter">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Unit & Currency Converter - Free Online Tools">
+  <meta property="og:description" content="Convert currencies, length, weight, temperature, and more instantly. Free, fast, and accurate.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Unit & Currency Converter">
+  <meta name="twitter:description" content="Free online unit and currency converter with real-time exchange rates.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Unit & Currency Converter",
+    "url": "https://example.com/",
+    "description": "Free online unit and currency converter with real-time exchange rates.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span>ConvertAll</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="tools/currency.html" class="nav-link">Currency</a>
+        <a href="tools/length.html" class="nav-link">Length</a>
+        <a href="tools/weight.html" class="nav-link">Weight</a>
+        <a href="tools/temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <div class="hero-badge">⚡ Fast & Free</div>
+      <h1>Unit & Currency Converter</h1>
+      <p>Convert currencies, measurements, and units instantly. Real-time exchange rates. No signup required.</p>
+    </section>
+
+    <!-- Quick Converter -->
+    <section class="quick-converter fade-in">
+      <h2>Quick Convert</h2>
+      <div class="quick-row">
+        <div class="quick-input-group">
+          <label for="quick-type">Type</label>
+          <select id="quick-type">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+          </select>
+        </div>
+      </div>
+      <div class="quick-row">
+        <div class="quick-input-group">
+          <label for="quick-input">Value</label>
+          <input type="number" id="quick-input" placeholder="Enter value" value="1">
+        </div>
+        <div class="quick-input-group">
+          <label for="quick-from">From</label>
+          <select id="quick-from"></select>
+        </div>
+        <button id="quick-swap" class="swap-btn" aria-label="Swap units">⇄</button>
+        <div class="quick-input-group">
+          <label for="quick-to">To</label>
+          <select id="quick-to"></select>
+        </div>
+      </div>
+      <div class="quick-result" id="quick-result">
+        <span class="result-value">0</span>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder Top -->
+    <div class="ad-placeholder ad-placeholder-top">
+      <!-- AdSense Ad Placeholder - 728x90 -->
+      <span>Advertisement</span>
+    </div>
+
+    <!-- All Converters -->
+    <section class="fade-in">
+      <h2 class="section-title">Conversion Tools</h2>
+      <p class="section-subtitle">Choose a converter to get started</p>
+
+      <div class="tools-grid">
+
+        <!-- Currency -->
+        <a href="tools/currency.html" class="tool-card">
+          <span class="popular-badge">Popular</span>
+          <div class="tool-card-icon">💱</div>
+          <h3>Currency Converter</h3>
+          <p>Convert between 30+ world currencies with real-time exchange rates updated every 30 minutes.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">USD</span>
+            <span class="tool-card-tag">EUR</span>
+            <span class="tool-card-tag">GBP</span>
+            <span class="tool-card-tag">JPY</span>
+            <span class="tool-card-tag">Live Rates</span>
+          </div>
+        </a>
+
+        <!-- Length -->
+        <a href="tools/length.html" class="tool-card">
+          <span class="popular-badge">Popular</span>
+          <div class="tool-card-icon">📏</div>
+          <h3>Length Converter</h3>
+          <p>Convert between meters, kilometers, miles, feet, inches, centimeters, millimeters, and yards.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">m to ft</span>
+            <span class="tool-card-tag">km to mi</span>
+            <span class="tool-card-tag">cm to in</span>
+          </div>
+        </a>
+
+        <!-- Weight -->
+        <a href="tools/weight.html" class="tool-card">
+          <span class="popular-badge">Popular</span>
+          <div class="tool-card-icon">⚖️</div>
+          <h3>Weight Converter</h3>
+          <p>Convert between kilograms, grams, pounds, ounces, metric tons, and stones.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">kg to lbs</span>
+            <span class="tool-card-tag">oz to g</span>
+            <span class="tool-card-tag">ton to kg</span>
+          </div>
+        </a>
+
+        <!-- Temperature -->
+        <a href="tools/temperature.html" class="tool-card">
+          <span class="popular-badge">Popular</span>
+          <div class="tool-card-icon">🌡️</div>
+          <h3>Temperature Converter</h3>
+          <p>Convert between Celsius, Fahrenheit, and Kelvin instantly.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">°C to °F</span>
+            <span class="tool-card-tag">°F to °C</span>
+            <span class="tool-card-tag">K to °C</span>
+          </div>
+        </a>
+
+        <!-- Speed -->
+        <a href="tools/speed.html" class="tool-card">
+          <div class="tool-card-icon">🚀</div>
+          <h3>Speed Converter</h3>
+          <p>Convert between km/h, mph, meters per second, and knots.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">km/h to mph</span>
+            <span class="tool-card-tag">m/s to km/h</span>
+            <span class="tool-card-tag">knots</span>
+          </div>
+        </a>
+
+        <!-- Area -->
+        <a href="tools/area.html" class="tool-card">
+          <div class="tool-card-icon">📐</div>
+          <h3>Area Converter</h3>
+          <p>Convert between square meters, square feet, square kilometers, acres, and hectares.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">sq m to sq ft</span>
+            <span class="tool-card-tag">acres</span>
+            <span class="tool-card-tag">hectares</span>
+          </div>
+        </a>
+
+        <!-- Volume -->
+        <a href="tools/volume.html" class="tool-card">
+          <div class="tool-card-icon">🧪</div>
+          <h3>Volume Converter</h3>
+          <p>Convert between liters, gallons, milliliters, cups, and fluid ounces.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">liters to gallons</span>
+            <span class="tool-card-tag">ml to cups</span>
+            <span class="tool-card-tag">fl oz</span>
+          </div>
+        </a>
+
+        <!-- Data Storage -->
+        <a href="tools/data.html" class="tool-card">
+          <div class="tool-card-icon">💾</div>
+          <h3>Data Storage Converter</h3>
+          <p>Convert between bytes, kilobytes, megabytes, gigabytes, and terabytes.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">GB to MB</span>
+            <span class="tool-card-tag">TB to GB</span>
+            <span class="tool-card-tag">KB to bytes</span>
+          </div>
+        </a>
+
+        <!-- Time -->
+        <a href="tools/time.html" class="tool-card">
+          <div class="tool-card-icon">⏱️</div>
+          <h3>Time Converter</h3>
+          <p>Convert between seconds, minutes, hours, days, weeks, and years.</p>
+          <div class="tool-card-tags">
+            <span class="tool-card-tag">hours to days</span>
+            <span class="tool-card-tag">minutes to hours</span>
+            <span class="tool-card-tag">weeks to days</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Popular Conversions Section -->
+    <section class="fade-in">
+      <h2 class="section-title">Popular Conversions</h2>
+      <p class="section-subtitle">Quick links to the most searched conversions</p>
+
+      <div class="tools-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+        <a href="tools/weight.html?from=kg&to=lb" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">kg to lbs</h3>
+          <p style="margin:0;">1 kg = 2.20462 lbs</p>
+        </a>
+        <a href="tools/temperature.html?from=C&to=F" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">Celsius to Fahrenheit</h3>
+          <p style="margin:0;">°C × 9/5 + 32 = °F</p>
+        </a>
+        <a href="tools/length.html?from=cm&to=in" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">cm to inches</h3>
+          <p style="margin:0;">1 cm = 0.393701 in</p>
+        </a>
+        <a href="tools/length.html?from=km&to=mi" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">km to miles</h3>
+          <p style="margin:0;">1 km = 0.621371 mi</p>
+        </a>
+        <a href="tools/currency.html" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">USD to EUR</h3>
+          <p style="margin:0;">Live exchange rate</p>
+        </a>
+        <a href="tools/weight.html?from=lb&to=kg" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">lbs to kg</h3>
+          <p style="margin:0;">1 lb = 0.453592 kg</p>
+        </a>
+        <a href="tools/volume.html?from=liters&to=gallons" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">Liters to gallons</h3>
+          <p style="margin:0;">1 L = 0.264172 gal</p>
+        </a>
+        <a href="tools/temperature.html?from=F&to=C" class="tool-card" style="padding:16px;">
+          <h3 style="font-size:0.95rem;">Fahrenheit to Celsius</h3>
+          <p style="margin:0;">(°F − 32) × 5/9 = °C</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder Bottom -->
+    <div class="ad-placeholder ad-placeholder-bottom">
+      <!-- AdSense Ad Placeholder - 728x90 -->
+      <span>Advertisement</span>
+    </div>
+
+    <!-- SEO Content -->
+    <section class="seo-content fade-in">
+      <h2>Free Online Unit & Currency Converter</h2>
+      <p>Welcome to ConvertAll, your go-to free online converter for units, measurements, and currencies. Whether you need to convert kilograms to pounds, Celsius to Fahrenheit, or USD to EUR, our tools provide instant, accurate results.</p>
+      <p>All conversions happen in real-time directly in your browser. For currency conversions, we fetch live exchange rates from reliable sources, updated every 30 minutes. No data is sent to external servers for unit conversions — your privacy is protected.</p>
+
+      <h2>Why Use Our Converter?</h2>
+      <p><strong>Fast & Accurate:</strong> Get instant results as you type. Our converters use precise conversion factors for accurate calculations every time.</p>
+      <p><strong>No Registration:</strong> Use all tools completely free without creating an account or providing any personal information.</p>
+      <p><strong>Mobile Friendly:</strong> Our responsive design works perfectly on phones, tablets, and desktops. Convert units on the go.</p>
+      <p><strong>9 Converter Tools:</strong> Covering currency, length, weight, temperature, speed, area, volume, data storage, and time conversions.</p>
+      <p><strong>Dark Mode:</strong> Easy on the eyes with automatic dark mode support based on your system preferences.</p>
+
+      <h2>Supported Conversions</h2>
+      <ul>
+        <li><strong>Currency:</strong> USD, EUR, GBP, JPY, CAD, AUD, CHF, CNY, INR, MXN, BRL, KRW, and 20+ more currencies with live rates</li>
+        <li><strong>Length:</strong> meters, kilometers, miles, feet, inches, centimeters, millimeters, yards</li>
+        <li><strong>Weight:</strong> kilograms, grams, pounds, ounces, metric tons, stones</li>
+        <li><strong>Temperature:</strong> Celsius, Fahrenheit, Kelvin</li>
+        <li><strong>Speed:</strong> km/h, mph, m/s, knots</li>
+        <li><strong>Area:</strong> square meters, square feet, square kilometers, acres, hectares</li>
+        <li><strong>Volume:</strong> liters, gallons, milliliters, cups, fluid ounces</li>
+        <li><strong>Data Storage:</strong> bytes, KB, MB, GB, TB</li>
+        <li><strong>Time:</strong> seconds, minutes, hours, days, weeks, years</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          <span>ConvertAll</span>
+        </a>
+        <p>Free online unit and currency converter. Fast, accurate, and easy to use. No registration required.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="tools/currency.html">Currency</a></li>
+          <li><a href="tools/length.html">Length</a></li>
+          <li><a href="tools/weight.html">Weight</a></li>
+          <li><a href="tools/temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="tools/speed.html">Speed</a></li>
+          <li><a href="tools/area.html">Area</a></li>
+          <li><a href="tools/volume.html">Volume</a></li>
+          <li><a href="tools/data.html">Data Storage</a></li>
+          <li><a href="tools/time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="tools/weight.html?from=kg&to=lb">kg to lbs</a></li>
+          <li><a href="tools/temperature.html?from=C&to=F">°C to °F</a></li>
+          <li><a href="tools/length.html?from=cm&to=in">cm to inches</a></li>
+          <li><a href="tools/currency.html">USD to EUR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 ConvertAll. Free online unit and currency converter tools.</p>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+
+  <!-- URL Parameter Handler for Quick Converter deep links -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      const type = params.get('type');
+      if (type && document.getElementById('quick-type')) {
+        document.getElementById('quick-type').value = type;
+        document.getElementById('quick-type').dispatchEvent(new Event('change'));
+      }
+    });
+  </script>
+</body>
+</html>

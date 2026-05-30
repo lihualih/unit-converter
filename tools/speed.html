@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Converter - km/h, mph, m/s, knots | ConvertAll</title>
+  <meta name="description" content="Free online speed converter. Convert between km/h, mph, meters per second, and knots instantly.">
+  <meta name="keywords" content="speed converter, km/h to mph, mph to km/h, knots converter, velocity converter">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/tools/speed.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="speed">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="currency.html" class="nav-link">Currency</a>
+        <a href="length.html" class="nav-link">Length</a>
+        <a href="weight.html" class="nav-link">Weight</a>
+        <a href="temperature.html" class="nav-link">Temperature</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="converter-page">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Speed Converter</span>
+      </nav>
+
+      <div class="converter-header">
+        <h1>🚀 Speed Converter</h1>
+        <p>Convert between km/h, mph, meters per second, and knots</p>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-top"><span>Advertisement</span></div>
+
+      <div class="converter-box">
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="input-value">Value</label>
+            <input type="number" id="input-value" placeholder="Enter value" value="100" step="any">
+          </div>
+          <div class="converter-field">
+            <label for="from-unit">From</label>
+            <select id="from-unit">
+              <option value="km/h" selected>Kilometers per hour (km/h)</option>
+              <option value="mph">Miles per hour (mph)</option>
+              <option value="m/s">Meters per second (m/s)</option>
+              <option value="knots">Knots (kn)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-btn-center">
+          <button class="swap-btn" aria-label="Swap units">⇄</button>
+        </div>
+
+        <div class="converter-row">
+          <div class="converter-field">
+            <label for="output-value">Result</label>
+            <input type="text" id="output-value" readonly placeholder="Result">
+          </div>
+          <div class="converter-field">
+            <label for="to-unit">To</label>
+            <select id="to-unit">
+              <option value="km/h">Kilometers per hour (km/h)</option>
+              <option value="mph" selected>Miles per hour (mph)</option>
+              <option value="m/s">Meters per second (m/s)</option>
+              <option value="knots">Knots (kn)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-display" id="result-display">
+          <div class="result-label">Result</div>
+          <div class="result-value">--</div>
+        </div>
+      </div>
+
+      <div class="ad-placeholder ad-placeholder-bottom"><span>Advertisement</span></div>
+
+      <section class="conversion-table-section">
+        <h2>Common Speed Conversions</h2>
+        <table class="conversion-table">
+          <thead>
+            <tr><th>From</th><th>To</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>100 km/h</td><td>mph</td><td>62.1371 mph</td></tr>
+            <tr><td>60 mph</td><td>km/h</td><td>96.5606 km/h</td></tr>
+            <tr><td>1 m/s</td><td>km/h</td><td>3.6 km/h</td></tr>
+            <tr><td>1 knot</td><td>km/h</td><td>1.852 km/h</td></tr>
+            <tr><td>1 knot</td><td>mph</td><td>1.15078 mph</td></tr>
+            <tr><td>100 mph</td><td>km/h</td><td>160.934 km/h</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-section">
+        <h2>About Speed Conversion</h2>
+        <p>Speed is the rate at which an object covers distance. Different units are used in different contexts — km/h and mph for driving, m/s for physics, and knots for aviation and maritime navigation.</p>
+
+        <h3>Speed Units</h3>
+        <ul>
+          <li><strong>km/h (kilometers per hour):</strong> Used worldwide for road speeds and weather.</li>
+          <li><strong>mph (miles per hour):</strong> Used in the US, UK, and a few other countries for road speeds.</li>
+          <li><strong>m/s (meters per second):</strong> The SI unit used in science and engineering.</li>
+          <li><strong>knots:</strong> Used in aviation and maritime. 1 knot = 1 nautical mile per hour = 1.852 km/h.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>ConvertAll</span></a>
+        <p>Free online unit and currency converter.</p>
+      </div>
+      <div>
+        <h4>Converters</h4>
+        <ul class="footer-links">
+          <li><a href="currency.html">Currency</a></li><li><a href="length.html">Length</a></li><li><a href="weight.html">Weight</a></li><li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More Tools</h4>
+        <ul class="footer-links">
+          <li><a href="speed.html">Speed</a></li><li><a href="area.html">Area</a></li><li><a href="volume.html">Volume</a></li><li><a href="data.html">Data</a></li><li><a href="time.html">Time</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular</h4>
+        <ul class="footer-links">
+          <li><a href="weight.html?from=kg&to=lb">kg to lbs</a></li><li><a href="temperature.html?from=C&to=F">°C to °F</a></li><li><a href="length.html?from=cm&to=in">cm to inches</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 ConvertAll.</p></div>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('from')) document.getElementById('from-unit').value = params.get('from');
+      if (params.get('to')) document.getElementById('to-unit').value = params.get('to');
+      document.getElementById('input-value').dispatchEvent(new Event('input'));
+    });
+  </script>
+</body>
+</html>
